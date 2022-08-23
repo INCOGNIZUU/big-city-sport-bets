@@ -1,0 +1,472 @@
+@font-face {
+    font-family: P22;
+    src: url('https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/745674/P22-Underground-Regular.woff');
+}
+body {
+    font-family: P22;
+}
+header {
+    background-color: #000;
+}
+    header .wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+    header .logo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px 0;
+    }
+    header h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    header .container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        margin-bottom: 20px;
+    }
+    header iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    header button {
+        background-color: #000;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 10px 40px;
+        border-radius: 3px;
+        cursor: pointer;
+    } 
+    header button:hover {
+        background-color: #1E1E1E;
+        box-shadow: 0 -1px 5px #767676;
+    }
+    #border-bot-lg {
+        display: none;
+        width: 100%;
+    }
+
+@media (min-width: 768px) {
+    header {
+        background-image: url('https://images.clickfunnels.com/b6/8d270739d7464ba0e90a81486658a7/depressed-man-with-alcohol-problem-6DXPBQF-1-.jpg');
+        height: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+        header .wrapper {
+            width: 90%;
+            max-width: 1120px;
+        }
+        header .logo {
+            width: 25%;
+        }
+        header h1 {
+            font-size: 60px;
+        }
+        header button {
+            margin-top: 500px;
+            font-size: 35px;
+            font-weight: 700;
+        }
+        #border-bot-lg {
+            display: block;
+        }
+}
+@media (min-width: 1024px) {
+    header {
+        background-image: none;
+    }
+        header button {
+            margin-top: 0;
+        }
+}
+
+.intro {
+    width: 95%;
+    margin: 0 auto;
+}
+    .intro h2, .intro h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .intro h2 {
+        font-size: 40px;
+        padding: 20px 5px;
+    }
+    .intro h3 {
+        font-size: 35px;
+        padding: 10px 0;
+    }
+    .intro p {
+        font-size: 20px;
+        margin: 25px 0;
+    }
+    .intro div {
+        padding: 20px 5px;
+    }
+    .intro img {
+        width: 100%;
+    }
+    .intro button {
+        background-color: #000;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 10px 40px;
+        border-radius: 3px;
+    }
+    .intro button:hover {
+        opacity: .9;
+    }
+    .intro .limited {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        color: #000B3C;
+    }
+    .intro .limited span {
+        font-style: italic;
+        font-weight: 700;
+    }
+    .intro #desktop-view {
+        display: none;
+    }
+
+
+@media (min-width: 768px) {
+    .intro {
+        width: 100%;
+        max-width: 1120px;
+    }
+    .intro h2 {
+        font-size: 55px;
+    }
+    .intro h3 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .intro .part1, .intro .part2 {
+        display: flex;
+    }
+    .part1 > div, .part2 > div {
+        width: 50%;
+    }
+    .intro button {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .intro #desktop-view {
+        display: block;
+    }
+    .intro #mobile-view {
+        display: none;
+    }
+}
+/* @media (min-width: 1024px) {
+    .intro {
+        width: 80%;
+    }
+} */
+
+.benefits {
+    width: 95%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+    .benefits h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .benefits .hr {
+        width: 20%;
+        height: 3px;
+        background-color: #000;
+        margin: 0 auto;
+    }
+    .benefits .container > div {
+        border: 3px solid #000;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .benefits h3 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+@media (min-width: 768px) {
+        .benefits h2 {
+            font-size: 60px;
+        }
+        .benefits .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .benefits .container > div {
+            width: 15%;
+            padding: 20px;
+        }
+}
+
+.welcome {
+    background-image: url("https://images.clickfunnels.com/ca/026c28dc474e8fae5e176154034092/successful-businessman-2021-08-26-18-51-20-utc.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    color: #fff;
+}
+
+    .welcome h2 {
+        margin-top: 50px;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .welcome p {
+        font-size: 22px;
+        margin: 25px 0;
+        text-align: center;
+    }    
+    .welcome button {
+        background-color: #000;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+    .welcome .limited {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px
+    }
+    .welcome .limited span {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+@media (min-width: 768px) {
+    .welcome {
+        background-attachment: fixed;
+    }    
+    .welcome .content {
+        width: 80%;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .welcome button {
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
+.stories {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+    .stories h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .stories .container {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-top: 56.25%;
+        margin-bottom: 20px;
+    }
+    .stories iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .stories button {
+        background-color: #000;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+
+@media (min-width: 768px) {
+    .stories button {
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
+.coaches {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+    .coaches h2, .coaches h3 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .coaches p {
+        font-size: 22px;
+        margin: 25px 0;
+    }
+    .coaches img {
+        width: 100%;
+    }
+    .coaches .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+    .fun-facts {
+        text-align: center;
+        width: 90%;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+        .fun-facts h4 {
+            font-size: 23px;
+        }
+        .fun-facts p {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0 auto;
+        }
+    .coaches .coaches-last p {
+        text-align: center;
+    }
+
+@media (min-width: 768px) {
+    .fun-facts {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .coaches .container {
+        width: 80%;
+        display: flex;
+    }
+    .coaches .container > div {
+        width: 50%;
+    }
+}
+
+.reviews {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+    .reviews h2 {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .reviews .container img {
+        width: 100%;
+    }
+    .reviews .card div {
+        border: 1px solid #000;
+        padding: 4px;
+    }
+
+@media (min-width: 768px) {
+    .reviews .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    } 
+    .reviews .card {
+        width: 30%;
+    }
+}
+
+footer {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+    footer h2 {
+        font-size: 56px;
+        text-align: center;
+        font-weight: 700;
+    }
+    footer h3 {
+        margin: 10px 0;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    footer .row div {
+        margin: 20px 0;
+    }
+    footer button {
+        background-color: #000;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 10px 40px;
+    } 
+    footer .limited {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px
+    }
+    footer .limited span {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+@media (min-width: 768px) {   
+    footer button {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    footer .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .row div {
+        width: 25%;
+    }
+}

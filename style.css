@@ -1,6 +1,6 @@
 @font-face {
     font-family: P22;
-    src: url('https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/745674/P22-Underground-Regular.woff');
+    src: url('/P22-Underground-Regular.woff');
 }
 body {
     font-family: P22;

@@ -116,8 +116,9 @@ header {
         padding: 10px 0;
     }
     .intro p {
+        color: #2F2F2F;
         font-size: 20px;
-        margin: 25px 0;
+        margin: 50px 0;
     }
     .intro div {
         padding: 20px 5px;
@@ -134,9 +135,10 @@ header {
         font-size: 20px;
         padding: 10px 40px;
         border-radius: 3px;
+        cursor: pointer;
     }
     .intro button:hover {
-        opacity: .9;
+        opacity: .8;
     }
     .intro .limited {
         font-size: 15px;
@@ -215,6 +217,9 @@ header {
         font-size: 22px;
         font-weight: 700;
     }
+    .benefits p {
+        color: #2F2F2F;
+    }
 
 @media (min-width: 768px) {
         .benefits h2 {
@@ -260,6 +265,13 @@ header {
         margin: 0 auto;
         font-size: 20px;
         padding: 10px 40px;
+        box-shadow: 0 -1px 5px #767676;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .welcome button:hover {
+        background-color: #1E1E1E;
+        box-shadow: 0 -1px 5px #767676;
     }
     .welcome .limited {
         font-size: 15px;
@@ -326,8 +338,15 @@ header {
         border: 0;
         display: block;
         margin: 0 auto;
+        margin-bottom: 20px;
         font-size: 20px;
+        border-radius: 3px;
         padding: 10px 40px;
+        cursor: pointer;
+    }
+    .stories button:hover {
+        background-color: #1E1E1E;
+        box-shadow: 0 -1px 5px #767676;
     }
 
 @media (min-width: 768px) {
@@ -351,7 +370,10 @@ header {
         text-align: center;
         font-size: 32px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin: 40px;
+    }
+    .coaches h3 {
+        margin-bottom: 40px;
     }
     .coaches p {
         font-size: 22px;
@@ -365,29 +387,44 @@ header {
         margin: 0 auto;
         max-width: 1120px;
     }
+    .coaches .coaches-last {
+        padding-bottom: 20px;
+    }
+    .coaches .coaches-last p {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .coaches .desktop-view {
+        display: none;
+    }
     .fun-facts {
         text-align: center;
         width: 90%;
         max-width: 1120px;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
+        .fun-facts h3 {
+            margin-bottom: 20px;
+        }
         .fun-facts h4 {
             font-size: 23px;
         }
         .fun-facts p {
             font-size: 40px;
             font-weight: 700;
-            margin: 0 auto;
+            margin:  10px;
         }
-    .coaches .coaches-last p {
-        text-align: center;
-    }
+        .fun-facts div {
+            margin: 40px 0;
+        }
+        
 
 @media (min-width: 768px) {
     .fun-facts {
         display: flex;
         justify-content: space-evenly;
-       margin-bottom: 50px;
+        margin-bottom: 50px;
     }
     .coaches .container {
         width: 80%;
@@ -396,11 +433,21 @@ header {
     .coaches .container > div {
         width: 50%;
     }
-    .coaches h2 {
-        font-size: 60px;
-    }
     .coaches .statement {
         padding-left: 40px;
+    }
+    .coaches .statement {
+        padding: 0 40px;
+    }
+    .coaches .mobile-view {
+        display: none;
+    }
+    .coaches .desktop-view {
+        display: block;
+    }
+    .coaches .coaches-last p {
+        text-align: center;
+        padding: 0;
     }
 }
 
@@ -413,15 +460,20 @@ header {
         font-size: 50px;
         font-weight: 700;
         text-align: center;
+        margin: 20px 0;
     }
     .reviews .container img {
         width: 100%;
     }
     .reviews .card div {
-        border: 1px solid #000;
+        border: 1px solid #cacaca;
         padding: 4px;
     }
-
+    .reviews .card span {
+        display: block;
+        margin-top: 20px;
+        text-align:right
+    }
 @media (min-width: 768px) {
     .reviews .container {
         width: 100%;
@@ -430,6 +482,45 @@ header {
     } 
     .reviews .card {
         width: 30%;
+    }
+}
+
+.story {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+    .story h2 {
+        font-size: 32px;
+    }
+@media (min-width: 768px) {
+    .story > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .story h2 {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .story div {
+        margin:  0 auto;
+    } 
+    .story .container {
+        position: relative;
+        overflow: hidden;
+        width: 40%;
+        padding-top: 56.25%;
+        margin-bottom: 20px;
+    }
+    .story iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -459,11 +550,29 @@ footer {
         margin: 0 auto;
         font-size: 20px;
         padding: 10px 40px;
+        border-radius: 3px;
+        cursor: pointer;
     } 
+    footer button:hover {
+        background-color: #1E1E1E;
+        box-shadow: 0 -1px 5px #767676;
+    }
     footer .limited {
         font-size: 15px;
         text-align: center;
-        margin: 5px
+        margin: 5px;
+        color: #000B3C;
+    }
+    footer .limited span {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    footer .limited {
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        color: #000B3C;
     }
     footer .limited span {
         font-style: italic;
@@ -482,4 +591,5 @@ footer {
     footer .row div {
         width: 25%;
     }
+    footer
 }
